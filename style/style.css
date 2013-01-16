@@ -1,0 +1,613 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; font-weight:normal;} body { line-height:1; } article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {display:block;} nav ul {list-style:none;} blockquote, q {quotes:none;} blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;} a {margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent;} ins {background-color:#ff9; color:#000; text-decoration:none;} mark {background-color:#ff9; color:#000; font-style:italic; font-weight:bold;} del {text-decoration: line-through;} abbr[title], dfn[title] {border-bottom:1px dotted; cursor:help;} table {border-collapse:collapse; border-spacing:0;} hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;} input, select {vertical-align:middle;text-decoration: none;}
+
+* {
+	margin: 0;
+	text-decoration: none;
+	color: inherit;
+	border: none;
+	/*-webkit-font-smoothing: subpixel-antialiased;*/
+} 
+
+ul, li {
+	list-style-type: none;
+}
+
+html {
+	height: 100%;
+	-ms-interpolation-mode: bicubic;
+	image-rendering: optimizeQuality;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue","Frutiger Linotype", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.2em;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 100%; 
+	max-height: 100%;
+	background-color: #222;
+}
+
+p {
+	font-family:  "HelveticaNeue", "Helvetica Neue", "Helvetica Neue","Frutiger Linotype", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.2em;
+	color: #fff;
+}
+
+
+
+#container {
+	position: relative;
+	width: 100%;
+}
+
+
+/* --- HEADER --- */
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 130px;
+	background-color: #333;
+	color: #fff;
+	clear:both;
+	float:left;
+	display: block;
+	z-index: 500;
+	overflow: hidden;
+	padding: 20px 0 0 0;
+	font-size: 120%;
+	line-height: 1em;
+}
+
+#header #team1score {
+	padding: 0 0 0 20px;
+	float: left;
+	width: 200px;
+}
+
+#header #team2score {
+	padding: 0 20px 0 0;
+	float: right;
+	text-align: right;
+	width: 200px;
+}
+
+#header .teamhash {
+	font-weight: 600;
+}
+
+#header .number {
+	font-weight: 600;
+	font-size: 60px;
+	line-height: .8em;
+	padding: 0 0 8px 0;
+}
+
+#header .switch {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1.1em;
+}
+
+#header #navlogo {
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 0 0 0;
+	font-size: 28px;
+}
+
+#header #navlogo .logotop {
+	font-weight: 600;
+	font-size: 100%;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+#header #navlogo .logobottom {
+	font-weight: 600;
+	font-size: 250%;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+
+
+/* --- INFORMATION --- */
+
+#information {
+	position: relative;
+	float: left;
+	background-color: #ccc;
+	border: 0;
+	width: 100%;
+	padding: 150px 0 0 0;
+}
+
+#information #homepage {
+	width: 100%;
+}
+
+#information #homepage .testcopy {
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.3em;
+	padding: 100px 30px 0 30px;
+	color: #222;
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+	border: 1px dotted #666;
+}
+
+#information #win {
+	width: 100%;
+}
+
+#information #win .testcopy {
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.3em;
+	padding: 100px 30px 0 30px;
+	color: #222;
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+	border: 1px dotted #666;
+}
+
+#information .x {
+	float: left;
+}
+
+
+/* --- INTERACT --- */
+
+
+#interact {
+	position:relative;
+	width: 100%;
+	color: #fff;
+	min-height: 160px;
+	clear:both;
+	float:left;
+	overflow:hidden;
+	display: inline-block;
+}
+
+#interact #sweepstakes h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#interact #sweepstakes p {
+	padding: 0 0 20px 0;
+}
+
+#interact #conversation {
+	position: relative;
+	text-align: center;
+}
+
+#interact #conversation h3 {
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0 0 8px 0;
+}
+
+#interact #conversation .howtoscore {
+	font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+	float: left;
+}
+
+#interact #conversation .cheerform {
+	position: relative;
+	margin: 0 auto;
+	padding: 8px 0 0 0;
+	width: 100%;
+}
+
+#interact #conversation .cheerform .btn {
+	float: right;
+	margin-bottom: 10px;
+}
+
+#interact #conversation .cheerform .btn.ways {
+	float: left;
+	margin-bottom: 10px;
+}
+
+#interact #conversation .textarea {
+	resize: none;
+	font-size:18px;
+	width: 95%;
+	color: #ce0000;
+	padding: 12px 12px 12px 12px;
+	overflow: visible;
+	margin: 0 0 20px 0;
+}
+
+#interact #share h3 {
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0 0 8px 0;
+}
+
+#interact #share p {
+	padding: 0 0 20px 0;
+}
+
+
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:1em 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#222;		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	background:#222;		/* center column background colour */
+	border-right: solid 1px #333;
+	height: 100%;
+}
+.threecol .colleft {
+	right:50%;			/* width of the middle column */
+	background:#222;	/* left column background colour */
+	border-right: solid 1px #333;
+	height: 100%;
+}
+.threecol .col1 {
+	width:46%;			/* width of center column content (column width minus padding on either side) */
+	left:102%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:21%;			/* Width of left column content (column width minus padding on either side) */
+	left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:21%;			/* Width of right column content (column width minus padding on either side) */
+	left:85%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+
+
+/* --- SOCIAL FEED --- */
+
+.main-loader-graphic {
+	display: block;
+	margin: 30px auto;
+}
+
+#feed {
+	width: 100%;
+	height: 100%;
+	min-height: 800px;
+	clear:both;
+	float:left;
+	display: block;
+}
+
+#feed .socialcol {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+#feed .socialcol .feed-item-container .message-container {
+	padding: 20px;
+}
+
+#feed .socialcol .feed-item-container .message-container aside {
+	margin: 30px 0 0;
+}
+
+#feed #stanford-social {
+	width: 50%;
+	height: 100%;
+	display: block;
+	background-color: #790000;
+	float: left;
+}
+
+#feed #stanford-social p {
+	color: #fff;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 300;
+	/*padding: 20px 20px 0 20px;*/
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#feed #stanford-social a {
+	/*position: absolute;*/
+	/*bottom: 20px;*/
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: none;
+	/*padding: 20px 20px 0 20px;*/
+	opacity: .7;
+	-webkit-transition: opacity 0.3s ease-out;
+}
+
+#feed #stanford-social a:hover {
+	text-decoration: none;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease-out;
+}
+
+#stanford-social .tweet, #stanford-social .tweet2 {
+	background-color: #b11119;
+}
+
+.team1colors {
+	background-color: #790000;
+	color: #fff;
+}
+
+#feed #wisconsin-social {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	background-color: #eee;
+	float: left;
+	color: #ce0000;
+}
+
+#feed #wisconsin-social p {
+	color: #ce0000;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 300;
+	/*padding: 20px 20px 0 20px;*/
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#feed #wisconsin-social a {
+	/*position: absolute;*/
+	/*bottom: 20px;*/
+	color: #ce0000;
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: none;
+	/*padding: 20px 20px 0 20px;*/
+	opacity: .7;
+	-webkit-transition: opacity 0.3s ease-out;
+}
+
+#feed #wisconsin-social a:hover {
+	text-decoration: none;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease-out;
+}
+
+.team2colors {
+	background-color: #eee;
+	color: #ce0000;
+}
+
+
+#wisconsin-social .tweet, #wisconsin-social .tweet2 {
+	background-color: #eeeeee;
+}
+
+.tweet {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.tweet2 {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+
+.doubletweet {
+	position: relative;
+	width: 100%;
+	float: left;
+}
+
+.smphoto {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.smphoto img {
+	width: 100%;
+	height: auto;
+}
+
+.lgphoto {
+	width: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.lgphoto img {
+	width: 100%;
+	height: auto;
+}
+
+/* --- TEAM SPECIFIC SPECIAL CASES (SMALL IMAGES CONTAINING TEAM BADGES) --- */
+#feed .socialcol .feed-item-container.special-case.stanford {
+	background: url(../images/stanford_logo.jpg) no-repeat;
+	background-size: cover;
+}
+
+#feed .socialcol .feed-item-container.special-case.wisconsin {
+	background: url(../images/wisconsin_logo.jpg) no-repeat;
+	background-size: cover;
+}
+
+#feed .socialcol .feed-item-container.special-case img {
+	width: 50%;
+}
+
+#feed .socialcol .feed-item-container.special-case figure {
+	text-align: right;
+}
+
+#feed .socialcol .feed-item-container.special-case.switch figure {
+	text-align: left;
+}
+
+
+/* --- BOTTOM BADGE --- */
+
+#topbadge {
+	position: fixed;
+	display: block;
+	z-index: 900;
+	top: -500px;
+	background: transparent url('../images/top-logo.png') no-repeat;
+	width: 130px;
+	height: 150px;
+	cursor: pointer;
+}
+
+
+
+/* --- FOOTER --- */
+
+
+#footer {
+	background-color: #222;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+
+
+
+#footer ul{
+	float: left;
+	display: inline;
+	padding: 20px 0 20px 20px;
+}
+
+#footer li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 0;
+}
+
+
+
+
+.accordion-inner p {
+	color: #222;
+}
+
+
+
+
+
+
+.testcopy {
+	
+}
+
+
+
+.clear {
+	clear: both;
+}
+
+
+
+.cheerform {
+	position: relative;
+	margin: 0 auto;
+	padding: 8px 0 0 0;
+	width: 100%;
+}
+
+
+.textarea {
+	resize: none;
+	font-size:18px;
+	width: 95%;
+	color: #ce0000;
+	padding: 12px 12px 12px 12px;
+	overflow: visible;
+	margin: 0 0 20px 0;
+}
+
+.modal-header {
+	color: #222;
+	
+}
+
+
+
+/* --- MODAL STYLES --- */
+#details-modal-container {
+	display: none;
+}
+
+#details-modal p {
+	color: #888;
+}
+
+#details-modal {
+	/*width: 50%;*/
+}
+
+/* --- MEDIA QUERIES (Next time, let's do Mobile First! :)  ) --- */
+
+/*@media screen and (min-width: 1280px) {}*/
+
+/* Breakpoint that changes the layout into a two-column layout. */
+@media screen and (max-width: 730px) {
+	#feed .socialcol {
+		width: 100%;
+		float: none;
+		display: block;
+	}
+}
+
+/* Breakpoint that changes the layout into a one-column layout. */
+@media screen and (max-width: 480px) {
+	#feed #stanford-social,
+	#feed #wisconsin-social {
+		width: 100%;
+		display: block;
+		float: none;
+	}
+}
